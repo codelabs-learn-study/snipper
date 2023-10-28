@@ -21,6 +21,9 @@ https://docs.enola.dev/use/execmd is an otherwise unrelated tool which may be a 
 ## ToDo
 
 1. Write `src/test/snipper` input/outputs (expected) test cases
+   * Snipper is configured by RegExps in a file type per-extension map
+   * In Java, the "markers" are comments like "// <<<<<<<<<<<<<<<<<<<<<<< id123" and "// >>>"
+   * In MD, the "markers" could be <-- <<<<< id123 --> comments, or (better?) HTML-like Directives like `<SNIP id=xyz />`
 1. Implement it, e.g. with https://deno.com as `src/deno/snipper.ts` 
 1. Write `docs/codelab/snipper.md`, using https://github.com/googlecodelabs/tools and https://docs.enola.dev/use/execmd/
 1. Publish https://codelabs.learn.study/snipper
